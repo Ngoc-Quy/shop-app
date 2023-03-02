@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center">
                 <img src="images/newsletter.png" alt="newsletter" />
-                <h2 className="text-white mb-0">Sign Up for Newsletters</h2>
+                <h2 className="text-white mb-0">Đăng ký nhận bản tin</h2>
               </div>
             </div>
             <div className="col-7">
@@ -36,10 +36,10 @@ const Footer = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-4">
-              <h4 className="text-white mb-4">Contact Us</h4>
+              <h4 className="text-white mb-4">Liên hệ chúng tôi</h4>
               <div>
                 <address className="text-white fs-6">
-                  Add : 101 Mai Xuan Thuong, <br /> Nha Trang, Khanh Hoa <br />
+                  Địa chỉ : Thôn Quý Hải, Long Hải <br /> Phú Quý, Bình Thuận <br />
                   pinCode: 11111
                 </address>
                 <a href="tel:+84 981275991" className="text-white mt-3 d-block mb-3">
@@ -65,30 +65,30 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-3">
-              <h4 className="text-white mb-4">Information</h4>
+              <h4 className="text-white mb-4">Thông tin</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1">Privacy Policy</Link>
-                <Link className="text-white py-2 mb-1">Refung Policy</Link>
-                <Link className="text-white py-2 mb-1">Shipping Policy</Link>
-                <Link className="text-white py-2 mb-1">Terms</Link>
+                <Link className="text-white py-2 mb-1">Chính sách bảo mật</Link>
+                <Link className="text-white py-2 mb-1">Chính sách hoàn tiền</Link>
+                <Link className="text-white py-2 mb-1">Chính sách vận chuyển</Link>
+                <Link className="text-white py-2 mb-1">Điều khiện</Link>
                 <Link className="text-white py-2 mb-1">Blogs</Link>
               </div>
             </div>
             <div className="col-3">
-              <h4 className="text-white mb-4">Account</h4>
+              <h4 className="text-white mb-4">Tài khoản</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1">About Us</Link>
+                <Link className="text-white py-2 mb-1">Về chúng tôi</Link>
                 <Link className="text-white py-2 mb-1">Fag</Link>
-                <Link className="text-white py-2 mb-1">Contact</Link>
+                <Link className="text-white py-2 mb-1">Liên hệ</Link>
               </div>
             </div>
             <div className="col-2">
-              <h4 className="text-white mb-4">Quick Links</h4>
+              <h4 className="text-white mb-4">Đường dẫn nhanh</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2 mb-1">Laptop</Link>
-                <Link className="text-white py-2 mb-1">Headphones</Link>
-                <Link className="text-white py-2 mb-1">Tables</Link>
-                <Link className="text-white py-2 mb-1">Watch</Link>
+                <Link className="text-white py-2 mb-1">Tai nghe</Link>
+                <Link className="text-white py-2 mb-1">Máy tính bản</Link>
+                <Link className="text-white py-2 mb-1">Đồng hồ</Link>
               </div>
             </div>
           </div>
@@ -98,7 +98,9 @@ const Footer = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <p className="text-center mb-0 text-white">&copy; {new Date().getFullYear()}; Powered by Developer Quy</p>
+              <p className="text-center mb-0 text-white">
+                &copy; {new Date().getFullYear()}; Được phát triển bởi Mr.Quý
+              </p>
             </div>
           </div>
         </div>
