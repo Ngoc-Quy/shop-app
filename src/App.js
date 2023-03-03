@@ -6,8 +6,13 @@ import About from './pages/About';
 import Blogs from './pages/Blogs';
 import CompareProduct from './pages/CompareProduct';
 import Contact from './pages/Contact';
+import Forgotpassword from './pages/Forgotpassword';
 import Home from './pages/Home';
+import Login from './pages/Login';
 import OurStore from './pages/OurStore';
+import Resetpassword from './pages/Resetpassword';
+import Signup from './pages/Signup';
+import SingleBlog from './pages/SingleBlog';
 import Wishlist from './pages/Wishlist';
 
 function App() {
@@ -23,6 +28,11 @@ function App() {
             <Route path="blogs" element={<Blogs />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="wishlist" element={<Wishlist />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="forgot-password" element={<Forgotpassword />} />
+            <Route path="reset-password" element={<Resetpassword />} />
+            <Route path="blog/:id" element={<SingleBlog />} />
           </Route>
         </Routes>
       </BrowserRouter>
