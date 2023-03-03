@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function SpecialProduct() {
   return (
     <>
-      <div className="col-4">
+      <div className="col-3">
         <div className="special-product-card">
           <div className="d-flex justify-content-between">
             <div>
@@ -15,7 +15,7 @@ function SpecialProduct() {
           <div className="special-product-content">
             <h5 className="brand">Havels</h5>
             <h6 className="title">Samsung galaxy Note10+ Mobile Phone: sim..</h6>
-            <ReactStars count={5} size={24} value="4" edit={false} activeColor="#ffd700" />
+            <ReactStars count={5} size={24} value={4} edit={false} activeColor="#ffd700" />
             <p className="price">
               <span className="red-p">$100</span>&nbsp; <strike>$200</strike>
             </p>
@@ -24,9 +24,9 @@ function SpecialProduct() {
                 <b>5 </b>days
               </p>
               <div className="d-flex gap-10 align-items-center">
-                <span className="badge rounded-circle p-3 bg-warning">1</span>:
-                <span className="badge rounded-circle p-3 bg-warning">1</span>:
-                <span className="badge rounded-circle p-3 bg-warning">1</span>
+                <span className="badge rounded-circle p-3 bg-danger">1</span>:
+                <span className="badge rounded-circle p-3 bg-danger">1</span>:
+                <span className="badge rounded-circle p-3 bg-danger">1</span>
               </div>
             </div>
             <div className="prod-count my-3">
@@ -42,7 +42,7 @@ function SpecialProduct() {
                 ></div>
               </div>
             </div>
-            <Link className="button">Add to Cart</Link>
+            <Link className="button">Thêm vào giỏ hàng</Link>
           </div>
         </div>
       </div>
