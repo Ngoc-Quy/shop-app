@@ -16,6 +16,7 @@ import Resetpassword from './pages/Resetpassword';
 import ShippingPolicy from './pages/ShippingPolicy';
 import Signup from './pages/Signup';
 import SingleBlog from './pages/SingleBlog';
+import SingleProduct from './pages/SingleProduct';
 import TermAndContions from './pages/TermAndContions';
 import Wishlist from './pages/Wishlist';
 
@@ -28,7 +29,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="store" element={<OurStore />} />
+            <Route path="product" element={<OurStore />} />
+            <Route path="product/:id" element={<SingleProduct />} />
             <Route path="blogs" element={<Blogs />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="wishlist" element={<Wishlist />} />
