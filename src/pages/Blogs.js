@@ -2,13 +2,14 @@ import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 import BlogCard from '../components/BlogCard';
+import Container from '../components/Container';
 
 function Blogs() {
   return (
     <>
-      <Meta title={'Blogs'} />
-      <BreadCrumb title="Blogs" />
-      <div className="blog-wrapper home-wrapper-2 py-5">
+      <Meta title={'Bài viết'} />
+      <BreadCrumb title="Bài viết" />
+      <Container classes="blog-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
@@ -42,7 +43,7 @@ function Blogs() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

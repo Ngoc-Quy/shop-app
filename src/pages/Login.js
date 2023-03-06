@@ -1,27 +1,25 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
+import Container from '../components/Container';
 import Meta from '../components/Meta';
+import CustomInput from '../components/CustomInput';
 
 function Login() {
   return (
     <>
-      <Meta title={'Login'} />
-      <BreadCrumb title="Login" />
+      <Meta title={'Đăng nhập'} />
+      <BreadCrumb title="Đăng nhập" />
 
-      <div className="login-wrapper py-5 home-wrapper-2">
+      <Container classes="login-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <div className="auth-card">
                 <h3 className="text-center">Đăng nhập</h3>
                 <form action="" className="d-flex flex-column gap-15">
-                  <div>
-                    <input type="text" placeholder="Email" name="email" className="form-control" />
-                  </div>
-                  <div className="mt-1">
-                    <input type="password" placeholder="Password" name="password" className="form-control" />
-                  </div>
+                  <CustomInput type="text" placeholder="Email" name="email" />
+                  <CustomInput type="password" placeholder="Password" name="password" />
                   <div>
                     <Link to="/forgot-password">Quên mật khẩu?</Link>
                     <div className="mt-3 d-flex justify-content-center align-items-center gap-15">
@@ -38,7 +36,7 @@ function Login() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

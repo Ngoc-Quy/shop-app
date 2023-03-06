@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
-              <p className="text-white mb-0">Free shipping Over $100 Free Returns</p>
+              <p className="text-white mb-0">Miễn phí vận chuyển cho đơn hàng từ 300.000 đ</p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
@@ -22,12 +22,15 @@ const Header = () => {
           </div>
         </div>
       </header>
+
       <header className="header-upper py3">
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Dev Corner</Link>
+                <Link to="/" className="text-white">
+                  NGỌC QUÝ
+                </Link>
               </h2>
             </div>
             <div className="col-5">
@@ -50,7 +53,7 @@ const Header = () => {
                   <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">
                     <img src="images/compare.svg" alt="compare" />
                     <p className="mb-0">
-                      Compare <br /> Product
+                      So sánh <br /> sản phẩm
                     </p>
                   </Link>
                 </div>
@@ -58,7 +61,7 @@ const Header = () => {
                   <Link to="/wishlist" className="d-flex align-items-center gap-10 text-white">
                     <img src="images/wishlist.svg" alt="wishlist" />
                     <p className="mb-0">
-                      Favourite <br /> wishlist
+                      Sản phẩm <br /> yêu thích
                     </p>
                   </Link>
                 </div>
@@ -66,7 +69,7 @@ const Header = () => {
                   <Link to="/login" className="d-flex align-items-center gap-10 text-white">
                     <img src="images/user.svg" alt="user" />
                     <p className="mb-0">
-                      Login <br /> My account
+                      Đăng nhập <br /> tài khoản
                     </p>
                   </Link>
                 </div>
@@ -84,6 +87,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+
       <header className="header-bottom py-3">
         <div className="container-xxl">
           <div className="row">
@@ -99,22 +103,22 @@ const Header = () => {
                       aria-expanded="false"
                     >
                       <img src="images/menu.svg" alt="menu" />
-                      <span className="me-15 d-inline-block">Shop Categories</span>
+                      <span className="me-15 d-inline-block">Danh mục</span>
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li>
-                        <Link to="" className="dropdown-item text-white" href="#">
-                          Action
+                        <Link to="#" className="dropdown-item text-white" href="#">
+                          Hành động
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#" className="dropdown-item text-white" href="#">
+                          Hành động khác
                         </Link>
                       </li>
                       <li>
                         <Link to="" className="dropdown-item text-white" href="#">
-                          Another action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="" className="dropdown-item text-white" href="#">
-                          Something else here
+                          Nội dung khác
                         </Link>
                       </li>
                     </ul>
@@ -122,10 +126,10 @@ const Header = () => {
                 </div>
                 <div className="menu-lists">
                   <div className="d-flex align-items-center gap-15">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/product">Our Store</NavLink>
-                    <NavLink to="/blogs">Blogs</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/">Trang chủ</NavLink>
+                    <NavLink to="/product">Cửa hàng</NavLink>
+                    <NavLink to="/blogs">Bài viết</NavLink>
+                    <NavLink to="/contact">Liên hệ</NavLink>
                   </div>
                 </div>
               </div>

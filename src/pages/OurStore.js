@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ReactStars from 'react-rating-stars-component';
 import BreadCrumb from '../components/BreadCrumb';
 import Color from '../components/Color';
+import Container from '../components/Container';
 import Meta from '../components/Meta';
 import ProductCard from '../components/ProductCard';
 
@@ -10,9 +11,9 @@ const Ourstore = () => {
 
   return (
     <>
-      <Meta title={'Our Store'} />
-      <BreadCrumb title="Our Store" />
-      <div className="store-wrapper py-5 home-wrapper-2">
+      <Meta title={'Cửa hàng'} />
+      <BreadCrumb title="Cửa hàng" />
+      <Container classes="store-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
@@ -32,41 +33,41 @@ const Ourstore = () => {
                 <h3 className="filter-title">Lọc</h3>
 
                 <div>
-                  <h5 className="sub-title">Availablity</h5>
+                  <h5 className="sub-title">Khả dụng</h5>
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="" />
                     <label className="form-check-label" htmlFor="">
-                      In Stock (1)
+                      Còn hàng (1)
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="" />
                     <label className="form-check-label" htmlFor="">
-                      Out of Stock (0)
+                      Hết hàng (0)
                     </label>
                   </div>
 
-                  <h5 className="sub-title">Price</h5>
+                  <h5 className="sub-title">Giá</h5>
 
                   <div className="d-flex align-items-center gap-10">
                     <div className="form-floating">
                       <input type="email" className="form-control" id="floatingInput" placeholder="from" />
-                      <label htmlFor="floatingInput">From</label>
+                      <label htmlFor="floatingInput">Từ</label>
                     </div>
                     <div className="form-floating">
                       <input type="email" className="form-control" id="floatingInput" placeholder="to" />
-                      <label htmlFor="floatingInput">To</label>
+                      <label htmlFor="floatingInput">Đến</label>
                     </div>
                   </div>
 
-                  <h5 className="sub-title">Color</h5>
+                  <h5 className="sub-title">Màu sắc</h5>
 
                   <div>
                     <Color />
                   </div>
 
-                  <h5 className="sub-title">Size</h5>
+                  <h5 className="sub-title">Kích thước</h5>
                   <div>
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" value="" id="color-1" />
@@ -105,7 +106,7 @@ const Ourstore = () => {
                     <div className="w-50">
                       <h5 className="">Kids headphones bulk 10 pack multi colored for students</h5>
                       <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
-                      <b>$ 300</b>
+                      <b>100.000đ</b>
                     </div>
                   </div>
 
@@ -116,7 +117,7 @@ const Ourstore = () => {
                     <div className="w-50">
                       <h5 className="">Kids headphones bulk 10 pack multi colored for students</h5>
                       <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
-                      <b>$ 300</b>
+                      <b>100.000đ</b>
                     </div>
                   </div>
                 </div>
@@ -128,23 +129,24 @@ const Ourstore = () => {
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="d-flex align-items-center gap-10">
                     <p className="mb-0 d-block" style={{width: '100px'}}>
-                      Sort By:
+                      Sắp xếp:
                     </p>
-                    <select name="" className="form-control form-select" id="">
-                      <option value="manual">Featured</option>
-                      <option value="title-selling" selected="selected">
-                        Best Selling
+                    <select defaultValue={'DEFAULT'} name="" className="form-control form-select" id="">
+                      <option value="DEFAULT" disabled>
+                        Chọn trạng thái
                       </option>
-                      <option value="title-ascending">Alphabetically, A-Z</option>
-                      <option value="title-desconding">Alphabetically, Z-A</option>
-                      <option value="price-selling">Price, low to high</option>
-                      <option value="price-selling">Price, high to low</option>
-                      <option value="created-selling">Date, old to new</option>
-                      <option value="created-selling">Date, new to old</option>
+                      <option value="title-selling">Bán chạy nhất</option>
+                      <option value="manual">Yêu thích nhất</option>
+                      <option value="title-ascending">Theo tên, A-Z</option>
+                      <option value="title-desconding">Theo tên, Z-A</option>
+                      <option value="price-selling">Giá, Tăng dấn</option>
+                      <option value="price-selling">Giá, giảm dần</option>
+                      <option value="created-selling">Ngày mới nhất</option>
+                      <option value="created-selling">Ngày cũ nhất</option>
                     </select>
                   </div>
                   <div className="d-flex align-items-center gap-10">
-                    <p className="totalproducts mb-0">21 products</p>
+                    <p className="totalproducts mb-0">21 Sản phẩm</p>
                     <div className="d-flex gap-10 align-items-center grid">
                       <img
                         onClick={() => {
@@ -190,7 +192,7 @@ const Ourstore = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

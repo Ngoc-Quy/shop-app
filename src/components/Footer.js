@@ -1,7 +1,7 @@
 import React from 'react';
-import {BsSearch} from 'react-icons/bs';
+import newsletter from '../images/newsletter.png';
 import {Link} from 'react-router-dom';
-import {BsLinkedin, BsGithub, BsInstagram, BsYoutube} from 'react-icons/bs';
+import {BsSearch, BsLinkedin, BsGithub, BsInstagram, BsYoutube} from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center">
-                <img src="images/newsletter.png" alt="newsletter" />
+                <img src={newsletter} alt="newsletter" />
                 <h2 className="text-white mb-0">Đăng ký nhận bản tin</h2>
               </div>
             </div>
@@ -77,10 +77,10 @@ const Footer = () => {
                   Chính sách vận chuyển
                 </Link>
                 <Link to="/term-conditions" className="text-white py-2 mb-1">
-                  Điều khiện
+                  Điều khoản
                 </Link>
                 <Link to="/blogs" className="text-white py-2 mb-1">
-                  Blogs
+                  Bải viết
                 </Link>
               </div>
             </div>

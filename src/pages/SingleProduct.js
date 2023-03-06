@@ -1,25 +1,178 @@
 import React, {useState} from 'react';
+import {AiOutlineHeart} from 'react-icons/ai';
+import {TbGitCompare} from 'react-icons/tb';
+import InnerImageZoom from 'react-inner-image-zoom';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import ReactStars from 'react-rating-stars-component';
 import BreadCrumb from '../components/BreadCrumb';
+import Color from '../components/Color';
+import Container from '../components/Container';
 import Meta from '../components/Meta';
 import SpecialProduct from '../components/SpecialProduct';
+import watch from '../images/watch.jpg';
 
 function SingleProduct() {
   const [orderedProduct, setorderedProduct] = useState(true);
+
+  const copyToClipboard = (text) => {
+    var textField = document.createElement('textarea');
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand('copy');
+    textField.remove();
+  };
 
   return (
     <div>
       <Meta title={'Single Product'} />
       <BreadCrumb title="Single Product" />
-      <div className="main-product-wrapper py-5 home-wrapper-2">
+      <Container classes="main-product-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                  <InnerImageZoom
+                    // zoomType={'hover'}
+                    src={
+                      'https://i5.walmartimages.com/asr/29630ff1-5735-4735-8c34-3932bdcbe346_1.b453eb875328ae7f784bacf54f5b1137.jpeg'
+                    }
+                  />
+                </div>
+                <div className="other-product-images d-flex flex-wrap gap-15">
+                  <div>
+                    <img className="img-fluid" src={watch} alt="headphone" />
+                  </div>
+                  <div>
+                    <img className="img-fluid" src={watch} alt="headphone" />
+                  </div>
+                  <div>
+                    <img className="img-fluid" src={watch} alt="headphone" />
+                  </div>
+                  <div>
+                    <img className="img-fluid" src={watch} alt="headphone" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">Kids Headphone bulk 10 pack</h3>
+                </div>
+                <div className="border-bottom py-3">
+                  <p className="price">$100.00</p>
+                  <div className="d-flex algin-items-center gap-10">
+                    <ReactStars count={5} size={24} value={4} edit={false} activeColor="#ffd700" />
+                    <p className="mb-0 t-review">(2 review)</p>
+                  </div>
+                  <a className="review-btn" href="#review">
+                    write a Review
+                  </a>
+                </div>
+                <div className="py-3">
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3 className="product-heading">Type:</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3 className="product-heading">Brand:</h3>
+                    <p className="product-data">Havels</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3 className="product-heading">Category : </h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3 className="product-heading">Tags : </h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3 className="product-heading">Availablity : </h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Size : </h3>
+                    <div className="d-flex flex-wrap gap-15">
+                      <span className="badge border border-1 bg-white text-dark boder-secondary">S</span>
+                      <span className="badge border border-1 bg-white text-dark boder-secondary">M</span>
+                      <span className="badge border border-1 bg-white text-dark boder-secondary">XL</span>
+                      <span className="badge border border-1 bg-white text-dark boder-secondary">XXL</span>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Color : </h3>
+                    <Color />
+                  </div>
+                  <div className="d-flex align-items-center gap-15 flex-row mt-2 mb-3">
+                    <h3 className="product-heading">Quantity : </h3>
+                    <div className="">
+                      <input
+                        className="form-control"
+                        type="number"
+                        style={{width: '70px'}}
+                        id=""
+                        name=""
+                        min={1}
+                        max={10}
+                      />
+                    </div>
+                    <div className="d-flex align-items-center gap-30 ms-5">
+                      <button className="button border-0" type="submit">
+                        Add to cart
+                      </button>
+                      <button className="button signup">Buy It now</button>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <p>
+                        <TbGitCompare
+                          className="
+                        fs-5 me-2"
+                        />
+                        Add to compare
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        <AiOutlineHeart
+                          className="
+                        fs-5 me-2"
+                        />
+                        Add to wishlist
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">Shipping and Returns : </h3>
+                    <p className="product-data">
+                      Class vivamus dui blandit porta blandit id adipiscing sociosqu at amet massa aenean tempor
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-3">
+                    <h3 className="product-heading">Product Link : </h3>
+                    <a
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                      onFocus={() => {
+                        copyToClipboard(
+                          'https://i5.walmartimages.com/asr/29630ff1-5735-4735-8c34-3932bdcbe346_1.b453eb875328ae7f784bacf54f5b1137.jpeg'
+                        );
+                      }}
+                      alt="link"
+                    >
+                      Copy link sản phẩm
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="description-wrapper py-5 home-wrapper-2">
+      </Container>
+      <Container classes="description-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -35,12 +188,12 @@ function SingleProduct() {
             </div>
           </div>
         </div>
-      </div>
-      <section className="reviews-wrapper home-wrapper-2">
+      </Container>
+      <Container classes="reviews-wrapper home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3>Reviews</h3>
+              <h3 id="review">Reviews</h3>
               <div className="review-inner-wrapper">
                 <div className="reviews-head d-flex justify-content-between align-items-center">
                   <div>
@@ -53,14 +206,12 @@ function SingleProduct() {
                   <div>
                     {orderedProduct && (
                       <div>
-                        <a className="text-dark text-decoration-underline" href="https://dsa">
-                          Write a Review
-                        </a>
+                        <a href="#review">Write a Review</a>
                       </div>
                     )}
                   </div>
                 </div>
-                <div className="review-form py-4">
+                <div id="review" className="review-form py-4">
                   <form action="" className="d-flex flex-column gap-15">
                     <h4>Write a Review</h4>
                     <div>
@@ -99,8 +250,8 @@ function SingleProduct() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="popular-wrapper py-5 home-wrapper-2">
+      </Container>
+      <Container classes="popular-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -111,7 +262,7 @@ function SingleProduct() {
             </div>
           </div>
         </div>
-      </section>
+      </Container>
     </div>
   );
 }

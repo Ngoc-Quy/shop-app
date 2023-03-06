@@ -1,13 +1,14 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
+import Container from '../components/Container';
 import Meta from '../components/Meta';
 
 function Wishlist() {
   return (
     <>
-      <Meta title={'Wishlist'} />
-      <BreadCrumb title="Wishlist" />
-      <div className="wishlist-wrapper home-wrapper-2 py-5">
+      <Meta title={'Sản phẩm yêu thích'} />
+      <BreadCrumb title="Sản phẩm yêu thích" />
+      <Container classes="wishlist-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
@@ -60,7 +61,7 @@ function Wishlist() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

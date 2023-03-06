@@ -4,6 +4,8 @@ import './App.css';
 import Layout from './components/Layout';
 import About from './pages/About';
 import Blogs from './pages/Blogs';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import CompareProduct from './pages/CompareProduct';
 import Contact from './pages/Contact';
 import Forgotpassword from './pages/Forgotpassword';
@@ -43,6 +45,8 @@ function App() {
             <Route path="refund-policy" element={<RefundPolicy />} />
             <Route path="shipping-policy" element={<ShippingPolicy />} />
             <Route path="term-conditions" element={<TermAndContions />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="checkout" element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>
