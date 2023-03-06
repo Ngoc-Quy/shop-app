@@ -9,11 +9,14 @@ const BlogCard = () => {
           <img className="img-fluid w-100" src="images/blog-1.jpg" alt="blogcard" />
         </div>
         <div className="blog-content">
-          <p className="date">1 Mar, 2023</p>
-          <h5 className="title">a beautiful sunday moring renaissance</h5>
-          <p className="desc">Loren ipsum sit amet consectetur aadipsing elit. At quasd dsah</p>
+          <p className="date">Thứ hai, ngày 12 tháng 2, 2023</p>
+          <h5 className="title">Tầm hình tuyệt vời</h5>
+          <p className="desc">
+            sử dụng công nghệ 3D con người có thể nhìn thế giới xung quanh bằng hệ thống thực tế ảo và có thể sử dụng nó
+            vào nhiều mục đích khác nhau đêm lại cho bạn cảm nhận tốt nhất về thế giới công nghệ phát triển hiện nay
+          </p>
           <Link to="/blog/:id" className="button">
-            Read More
+            Đọc thêm
           </Link>
         </div>
       </div>

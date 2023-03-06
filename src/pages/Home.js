@@ -17,10 +17,12 @@ const Home = () => {
               <div className="main-banner position-relative">
                 <img src="images/main-banner.jpg" className="img-fluid rounded-3" alt="Main banner" />
                 <div className="main-banner-content position-absolute">
-                  <h4>SUPPERCHANGED FOR PROS</h4>
+                  <h4>SIÊU PHẨM</h4>
                   <h5>Ipad s13+ Pro</h5>
-                  <p>Form $999.0 or %41.62/mo</p>
-                  <Link className="button">BUY NOW</Link>
+                  <p>Từ 2tr hoặc trả góp</p>
+                  <Link to="product/:id" className="button">
+                    Mua ngay
+                  </Link>
                 </div>
               </div>
             </div>
@@ -29,44 +31,44 @@ const Home = () => {
                 <div className="small-banner position-relative">
                   <img src="images/catbanner-01.jpg" className="img-fluid rounded-3" alt="Main banner" />
                   <div className="small-banner-content position-absolute">
-                    <h4>SUPPERCHANGED FOR PROS</h4>
+                    <h4>SIÊU PHẨM</h4>
                     <h5>Ipad s13+ Pro</h5>
                     <p>
-                      Form $999.0 <br />
-                      or %41.62/mo
+                      Từ 500.000đ <br />
+                      hoặc free
                     </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
                   <img src="images/catbanner-02.jpg" className="img-fluid rounded-3" alt="Main banner" />
                   <div className="small-banner-content position-absolute">
-                    <h4>SUPPERCHANGED FOR PROS</h4>
+                    <h4>SIÊU PHẨM</h4>
                     <h5>Ipad s13+ Pro</h5>
                     <p>
-                      Form $999.0 <br />
-                      or %41.62/mo
+                      Từ 2.000.000đ <br />
+                      hoặc 1.000.000đ
                     </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
                   <img src="images/catbanner-03.jpg" className="img-fluid rounded-3" alt="Main banner" />
                   <div className="small-banner-content position-absolute">
-                    <h4>NEW ARRI</h4>
+                    <h4>SIÊU PHẨM</h4>
                     <h5>Ipad s13+ Pro</h5>
                     <p>
-                      Form $999.0 <br />
-                      or %41.62/mo
+                      Từ 999.000đ <br />
+                      hoặc 100.000đ
                     </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
                   <img src="images/catbanner-03.jpg" className="img-fluid rounded-3" alt="Main banner" />
                   <div className="small-banner-content position-absolute">
-                    <h4>NEW ARRI</h4>
+                    <h4>SIÊU PHẨM</h4>
                     <h5>Ipad s13+ Pro</h5>
                     <p>
-                      Form $999.0 <br />
-                      or %41.62/mo
+                      từ 999.000đ <br />
+                      hoặc 500.000đ
                     </p>
                   </div>
                 </div>
@@ -102,62 +104,63 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
+              <h3 className="text-dark">Bản danh mục</h3>
               <div className="categories d-flex justify-content-between align-items-center flex-wrap">
                 <div className="d-flex gap align-items-center">
                   <div>
-                    <h6>Music & Gaming</h6>
-                    <p>10 Items</p>
+                    <h6>Máy nghe nhạc</h6>
+                    <p>10 sản phẩm</p>
                   </div>
                   <img src="images/camera.jpg" alt="camera" />
                 </div>
                 <div className="d-flex gap align-items-center">
                   <div>
-                    <h6>Camera</h6>
-                    <p>10 Items</p>
+                    <h6>Máy xem phim</h6>
+                    <p>10 sản phẩm</p>
                   </div>
                   <img src="images/camera.jpg" alt="camera" />
                 </div>
                 <div className="d-flex gap align-items-center">
                   <div>
-                    <h6>Smart Tivi</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="images/tv.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Smart Watches</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="images/headphone.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Music & Gaming</h6>
-                    <p>10 Items</p>
+                    <h6>Máy ảnh</h6>
+                    <p>10 sản phẩm</p>
                   </div>
                   <img src="images/camera.jpg" alt="camera" />
                 </div>
                 <div className="d-flex gap align-items-center">
                   <div>
-                    <h6>Camera</h6>
-                    <p>10 Items</p>
+                    <h6>Máy chơi game</h6>
+                    <p>10 sản phẩm</p>
                   </div>
                   <img src="images/camera.jpg" alt="camera" />
                 </div>
                 <div className="d-flex gap align-items-center">
                   <div>
-                    <h6>Smart Tivi</h6>
-                    <p>10 Items</p>
+                    <h6>Điện thoại</h6>
+                    <p>10 sản phẩm</p>
                   </div>
-                  <img src="images/tv.jpg" alt="camera" />
+                  <img src="images/camera.jpg" alt="camera" />
                 </div>
                 <div className="d-flex gap align-items-center">
                   <div>
-                    <h6>Smart Watches</h6>
-                    <p>10 Items</p>
+                    <h6>Tai nghe</h6>
+                    <p>10 sản phẩm</p>
                   </div>
-                  <img src="images/headphone.jpg" alt="camera" />
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Laptop</h6>
+                    <p>10 sản phẩm</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Máy nghe nhạc</h6>
+                    <p>10 sản phẩm</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
                 </div>
               </div>
             </div>

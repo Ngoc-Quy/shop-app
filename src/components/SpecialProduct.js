@@ -14,15 +14,15 @@ function SpecialProduct() {
             </div>
           </div>
           <div className="special-product-content">
-            <h5 className="brand">Havels</h5>
-            <h6 className="title">Samsung galaxy Note10+ Mobile Phone: sim..</h6>
+            <h5 className="brand">Giảm giá sốc</h5>
+            <h6 className="title">Samsung galaxy Note10+ Mobile Phone: </h6>
             <ReactStars count={5} size={24} value={4} edit={false} activeColor="#ffd700" />
             <p className="price">
-              <span className="red-p">$100</span>&nbsp; <strike>$200</strike>
+              <span className="red-p">400.000đ</span>&nbsp; <strike>150.000đ</strike>
             </p>
             <div className="discount-till d-flex align-items-center gap-10">
               <p className="mb-0">
-                <b>5 </b>days
+                còn<b> 5 </b>ngày
               </p>
               <div className="d-flex gap-10 align-items-center">
                 <span className="badge rounded-circle p-3 bg-danger">1</span>:
@@ -31,7 +31,7 @@ function SpecialProduct() {
               </div>
             </div>
             <div className="prod-count my-3">
-              <p>Products: 5</p>
+              <p>Số lượng còn: 5</p>
               <div className="progress">
                 <div
                   className="progress-bar"

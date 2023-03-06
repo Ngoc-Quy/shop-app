@@ -9,7 +9,7 @@ function BreadCrumb({title}) {
           <div className="col-12">
             <p className="text-center mb-0 ">
               <Link className="text-dark" to="/">
-                Home &nbsp;
+                Trang chủ &nbsp;
               </Link>
               / {title}
             </p>

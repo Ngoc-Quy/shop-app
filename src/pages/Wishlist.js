@@ -18,8 +18,8 @@ function Wishlist() {
                   <img className="img-fluid w-100" src="images/watch.jpg" alt="watch" />
                 </div>
                 <div className="py-3 px-3">
-                  <h5 className="title">Horor T1 1B RAM ROM 7 inch</h5>
-                  <h6 className="price">$100</h6>
+                  <h5 className="title">Apple watch seti 8+</h5>
+                  <h6 className="price">100.000đ</h6>
                 </div>
               </div>
             </div>
@@ -30,8 +30,8 @@ function Wishlist() {
                   <img className="img-fluid w-100" src="images/watch.jpg" alt="watch" />
                 </div>
                 <div className="py-3 px-3">
-                  <h5 className="title">Horor T1 1B RAM ROM 7 inch</h5>
-                  <h6 className="price">$100</h6>
+                  <h5 className="title">Apple watch seti 8+</h5>
+                  <h6 className="price">100.000đ</h6>
                 </div>
               </div>
             </div>
@@ -42,11 +42,12 @@ function Wishlist() {
                   <img className="img-fluid w-100" src="images/watch.jpg" alt="watch" />
                 </div>
                 <div className="py-3 px-3">
-                  <h5 className="title">Horor T1 1B RAM ROM 7 inch</h5>
-                  <h6 className="price">$100</h6>
+                  <h5 className="title">Apple watch seti 8+</h5>
+                  <h6 className="price">100.000đ</h6>
                 </div>
               </div>
             </div>
+
             <div className="col-3">
               <div className="wishlist-card position-relative">
                 <img src="images/cross.svg" alt="cross" className="position-absolute cross img-fluid" />
@@ -54,8 +55,8 @@ function Wishlist() {
                   <img className="img-fluid w-100" src="images/watch.jpg" alt="watch" />
                 </div>
                 <div className="py-3 px-3">
-                  <h5 className="title">Horor T1 1B RAM ROM 7 inch</h5>
-                  <h6 className="price">$100</h6>
+                  <h5 className="title">Apple watch seti 8+</h5>
+                  <h6 className="price">100.000đ</h6>
                 </div>
               </div>
             </div>

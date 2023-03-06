@@ -25,14 +25,14 @@ const ProductCard = ({grid}) => {
             <img className="img-fluid" src={watch2} alt="product" />
           </div>
           <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">kids of the bukl 10 pack muild colored for</h5>
+            <h6 className="brand">Giam giá</h6>
+            <h5 className="product-title">Đồng hồ apple Watch seri 7</h5>
             <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
             <p className={`description ${grid === 12 ? 'd-block' : 'd-none'}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae hendrerit tempus quisque in etiam semper
-              conubia. Elit eu mus netus enim maecenas quis quam. Imperdiet purus netus a leo semper elementum sapien.
+              Sản phẩm nâng cấp của ban seri 6 với nhiều tính năng nổi bậc và hiệu quả, cho thời lượng pin sử dung lâu
+              hơn và nhiều tiện ích giúp cho người dùng theo dõi tình trạng sức khoẻ của ban thân mình.
             </p>
-            <p className="price">$100.00</p>
+            <p className="price">10.000.000đ</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
@@ -49,6 +49,7 @@ const ProductCard = ({grid}) => {
           </div>
         </Link>
       </div>
+
       <div className={` ${location.pathname === '/product' ? `gr-${grid}` : 'col-3'} `}>
         <Link to={`${location.pathname === '/' ? 'product/:id' : ':id'}`} className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
@@ -61,14 +62,14 @@ const ProductCard = ({grid}) => {
             <img className="img-fluid" src={watch2} alt="product" />
           </div>
           <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">kids of the bukl 10 pack muild colored for</h5>
+            <h6 className="brand">Giam giá</h6>
+            <h5 className="product-title">Đồng hồ apple Watch seri 7</h5>
             <ReactStars count={5} size={24} value={3} edit={false} activeColor="#ffd700" />
             <p className={`description ${grid === 12 ? 'd-block' : 'd-none'}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae hendrerit tempus quisque in etiam semper
-              conubia. Elit eu mus netus enim maecenas quis quam. Imperdiet purus netus a leo semper elementum sapien.
+              Sản phẩm nâng cấp của ban seri 6 với nhiều tính năng nổi bậc và hiệu quả, cho thời lượng pin sử dung lâu
+              hơn và nhiều tiện ích giúp cho người dùng theo dõi tình trạng sức khoẻ của ban thân mình.
             </p>
-            <p className="price">$100.00</p>
+            <p className="price">10.000.000đ</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">

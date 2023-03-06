@@ -19,27 +19,27 @@ function CompareProduct() {
                   <img src="images/watch.jpg" alt="watch" />
                 </div>
                 <div className="compare-product-details">
-                  <h5 className="title">Horor T1 1B RAM ROM 7 inch</h5>
-                  <h6 className="price mb-3">$100</h6>
+                  <h5 className="title">Apple watch seri 7+</h5>
+                  <h6 className="price mb-3">100.000đ</h6>
                   <div>
                     <div className="product-detail">
-                      <h5>Brand</h5>
-                      <p>Havels</p>
+                      <h5>Thương hiệu</h5>
+                      <p>Apple</p>
                     </div>
                     <div className="product-detail">
-                      <h5>Type:</h5>
-                      <p>Watch</p>
+                      <h5>Loại:</h5>
+                      <p>Đồng hồ</p>
                     </div>
                     <div className="product-detail">
-                      <h5>Availablity</h5>
-                      <p>In Stock</p>
+                      <h5>Tình trạng</h5>
+                      <p>còn hàng</p>
                     </div>
                     <div className="product-detail">
-                      <h5>Color:</h5>
+                      <h5>màu sắc:</h5>
                       <Color />
                     </div>
                     <div className="product-detail">
-                      <h5>Size:</h5>
+                      <h5>Kích thước:</h5>
                       <div className="d-flex gap-10">
                         <p>S</p>
                         <p>M</p>
@@ -56,27 +56,27 @@ function CompareProduct() {
                   <img src="images/watch.jpg" alt="watch" />
                 </div>
                 <div className="compare-product-details">
-                  <h5 className="title">Horor T1 1B RAM ROM 7 inch</h5>
-                  <h6 className="price mb-3">$100</h6>
+                  <h5 className="title">Apple watch seri 7+</h5>
+                  <h6 className="price mb-3">100.000đ</h6>
                   <div>
                     <div className="product-detail">
-                      <h5>Brand</h5>
-                      <p>Havels</p>
+                      <h5>Thương hiệu</h5>
+                      <p>Apple</p>
                     </div>
                     <div className="product-detail">
-                      <h5>Type:</h5>
-                      <p>Watch</p>
+                      <h5>Loại:</h5>
+                      <p>Đồng hồ</p>
                     </div>
                     <div className="product-detail">
-                      <h5>Availablity</h5>
-                      <p>In Stock</p>
+                      <h5>Tình trạng</h5>
+                      <p>còn hàng</p>
                     </div>
                     <div className="product-detail">
-                      <h5>Color:</h5>
+                      <h5>màu sắc:</h5>
                       <Color />
                     </div>
                     <div className="product-detail">
-                      <h5>Size:</h5>
+                      <h5>Kích thước:</h5>
                       <div className="d-flex gap-10">
                         <p>S</p>
                         <p>M</p>

@@ -1,6 +1,11 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import {BsSearch} from 'react-icons/bs';
+import User from '../images/user.svg';
+import Compare from '../images/compare.svg';
+import Wishlist from '../images/wishlist.svg';
+import Cart from '../images/cart.svg';
+import Menu from '../images/menu.svg';
 
 const Header = () => {
   return (
@@ -51,7 +56,7 @@ const Header = () => {
               <div className="header-upper-link d-flex align-items-center justify-content-between">
                 <div>
                   <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/compare.svg" alt="compare" />
+                    <img src={Compare} alt="compare" />
                     <p className="mb-0">
                       So sánh <br /> sản phẩm
                     </p>
@@ -59,7 +64,7 @@ const Header = () => {
                 </div>
                 <div>
                   <Link to="/wishlist" className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/wishlist.svg" alt="wishlist" />
+                    <img src={Wishlist} alt="wishlist" />
                     <p className="mb-0">
                       Sản phẩm <br /> yêu thích
                     </p>
@@ -67,7 +72,7 @@ const Header = () => {
                 </div>
                 <div>
                   <Link to="/login" className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/user.svg" alt="user" />
+                    <img src={User} alt="user" />
                     <p className="mb-0">
                       Đăng nhập <br /> tài khoản
                     </p>
@@ -75,10 +80,10 @@ const Header = () => {
                 </div>
                 <div>
                   <Link to="/cart" className="d-flex align-items-center gap-10 text-white">
-                    <img src="images/cart.svg" alt="cart" />
+                    <img src={Cart} alt="cart" />
                     <div className="d-flex flex-column">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-8">$ 500</p>
+                      <span className="badge bg-white text-dark">1</span>
+                      <p className="mb-8">500.000đ</p>
                     </div>
                   </Link>
                 </div>
@@ -102,7 +107,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg" alt="menu" />
+                      <img src={Menu} alt="menu" />
                       <span className="me-15 d-inline-block">Danh mục</span>
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">

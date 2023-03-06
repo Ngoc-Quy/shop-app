@@ -698,11 +698,13 @@ footer .input-group-text {
 .other-product-images {
   background-color: white;
   padding: 20px;
+  flex: 1;
 }
 .other-product-images > div {
-  width: 48%;
+  width: 23%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
+  border-radius: 6px;
 }
 .main-product-details {
   background-color: white;
